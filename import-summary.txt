@@ -1,0 +1,79 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .DS_Store
+* changelist.txt
+* ic_launcher-web.png
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+gson-2.2.4.jar => com.google.code.gson:gson:2.2.4
+
+Potentially Missing Dependency:
+-------------------------------
+When we replaced the following .jar files with a Gradle dependency, we
+inferred the dependency version number from the filename. This
+specific version may not actually be available from the repository.
+If you get a build error stating that the dependency is missing, edit
+the version number to for example "+" to pick up the latest version
+instead. (This may require you to update your code if the library APIs
+have changed.)
+
+gson-2.2.4.jar => version 2.2.4 in com.google.code.gson:gson:2.2.4
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => wmtrunksdk\src\main\AndroidManifest.xml
+* assets\ => wmtrunksdk\src\main\assets
+* libs\armeabi\libcapsdk.so => wmtrunksdk\src\main\jniLibs\armeabi\libcapsdk.so
+* libs\armeabi\libCpuFeatures.so => wmtrunksdk\src\main\jniLibs\armeabi\libCpuFeatures.so
+* libs\armeabi\libH264Decoder.so => wmtrunksdk\src\main\jniLibs\armeabi\libH264Decoder.so
+* libs\armeabi\libh264tomp4.so => wmtrunksdk\src\main\jniLibs\armeabi\libh264tomp4.so
+* libs\armeabi\libIntercomManager.so => wmtrunksdk\src\main\jniLibs\armeabi\libIntercomManager.so
+* libs\armeabi\liblive555.so => wmtrunksdk\src\main\jniLibs\armeabi\liblive555.so
+* libs\armeabi\libPlayCtrl.so => wmtrunksdk\src\main\jniLibs\armeabi\libPlayCtrl.so
+* libs\armeabi\libspeex.so => wmtrunksdk\src\main\jniLibs\armeabi\libspeex.so
+* libs\armeabi\libvomontplayer.so => wmtrunksdk\src\main\jniLibs\armeabi\libvomontplayer.so
+* libs\armeabi\libwmclientsdk.so => wmtrunksdk\src\main\jniLibs\armeabi\libwmclientsdk.so
+* libs\armeabi\libxmplayer.so => wmtrunksdk\src\main\jniLibs\armeabi\libxmplayer.so
+* libs\H264Decoder.jar => wmtrunksdk\libs\H264Decoder.jar
+* libs\IntercomSdk.jar => wmtrunksdk\libs\IntercomSdk.jar
+* libs\IPlaySDK.jar => wmtrunksdk\libs\IPlaySDK.jar
+* libs\PlayerSDK.jar => wmtrunksdk\libs\PlayerSDK.jar
+* libs\wmplayer.jar => wmtrunksdk\libs\wmplayer.jar
+* lint.xml => wmtrunksdk\lint.xml
+* res\ => wmtrunksdk\src\main\res
+* src\ => wmtrunksdk\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

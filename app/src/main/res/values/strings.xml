@@ -1,0 +1,59 @@
+<resources>
+    <!--vlinker 海信汇看-->
+    <string name="app_name">vlinker</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="ploice_souce">报  警  源：</string>
+    <string name="ploice_type">报警类型：</string>
+    <string name="ploice_time">报警时间：</string>
+    <string name="start_time">开始时间：</string>
+    <string name="end_time">结束时间：</string>
+    <string name="search">搜索</string>
+    <string name="input_text">输入设备名称</string>
+    <string name="wifi">wifi探针</string>
+    <string name="police">报警</string>
+
+    <!-- 登录界面 -->
+    <string name="input_num">请输入用户名</string>
+    <string name="input_psd">请输入密码</string>
+    <string name="login">登录</string>
+    <string name="user_register">新用户注册</string>
+    <string name="register_login">验证码登录</string>
+    <string name="error_num_psd">手机号或密码不能为空</string>
+    <string name="error_num">手机号,密码或IP地址错误，登录失败</string>
+    <string name="error_login">登录失败，请检查网络或者IP地址！</string>
+    <string name="error">请检查网络或者IP地址！</string>
+    <!-- 注册界面 -->
+
+    <string name="look_psd">显示密码</string>
+    <string name="inputpsd">请输入6—12位密码</string>
+    <string name="nextinputpsd">再次输入密码</string>
+
+    <!-- 首页 -->
+    <string name="radio_video">视频</string>
+    <string name="radio_map">地图</string>
+    <string name="radio_callplolice">报警</string>
+    <string name="radio_more">更多</string>
+    <string name="real_video">实时预览</string>
+    <string name="back_video">远程回放</string>
+    <string name="select_device">请选择监控点</string>
+    <string name="client_back">设备端回放</string>
+    <string name="cloud_back">云端回放</string>
+    <string name="start">开始</string>
+
+    <string name="take_photo">抓拍</string>
+    <string name="snapshot">录像</string>
+    <string name="yuntai">云台</string>
+    <string name="new_pic">最新图片</string>
+
+    <!-- 实时预览 -->
+    <string name="five">5分钟</string>
+    <string name="one_hour">1小时</string>
+    <string name="one_day">24小时</string>
+
+    <!-- 图片中心 -->
+    <string name="share_img">转发</string>
+    <string name="loading">加载中</string>
+
+
+</resources>

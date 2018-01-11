@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/alertdialog_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_margin="5dp"
+            android:id="@+id/yes_choose_type_use"
+            android:text="确定"
+            android:textColor="@color/main_color"
+            android:background="@drawable/top_select_bg"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <ListView
+        android:listSelector="@color/white"
+        android:divider="@null"
+        android:id="@+id/police_type_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+
+</LinearLayout>

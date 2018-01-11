@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/item_manage_date"
+        android:textSize="13sp"
+        android:textColor="@color/text_color"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="@dimen/layout_10dp"
+        android:text="2016-10-12"
+        android:background="@color/alertdialog_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.vomont.vlink.view.NoScrollGridView
+        android:layout_margin="10dp"
+        android:id="@+id/item_manage_scrollgridview"
+        android:numColumns="4"
+        android:columnWidth="90dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.vomont.vlink.view.NoScrollGridView>
+
+
+
+
+</LinearLayout>

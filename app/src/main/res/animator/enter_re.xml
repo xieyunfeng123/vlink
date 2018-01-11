@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" android:ordering="sequentially">
+
+<!--    <set  android:ordering="together">
+        <objectAnimator
+            android:duration="100"
+            android:propertyName="scaleX"
+            android:valueFrom="1f"
+            android:valueTo="0.8f"
+            />
+
+        <objectAnimator
+            android:duration="100"
+            android:propertyName="scaleY"
+            android:valueFrom="1f"
+            android:valueTo="0.8f"
+            />
+    </set>-->
+    <objectAnimator
+        android:duration="500"
+        android:propertyName="rotationY"
+        android:valueFrom="90"
+        android:valueTo="90" />
+    <objectAnimator
+        android:duration="500"
+        android:interpolator="@android:anim/decelerate_interpolator"
+        android:propertyName="rotationY"
+        android:startOffset="500"
+        android:valueFrom="90"
+        android:valueTo="0" />
+<!--    <set  android:ordering="together">
+        <objectAnimator
+            android:duration="100"
+            android:propertyName="scaleX"
+            android:valueFrom="0.8f"
+            android:valueTo="1f"
+            />
+        <objectAnimator
+            android:duration="100"
+            android:propertyName="scaleY"
+            android:valueFrom="0.8f"
+            android:valueTo="1f"
+            />
+    </set>-->
+</set>

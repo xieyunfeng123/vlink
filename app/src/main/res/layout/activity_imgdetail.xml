@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/back_color"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/img_detail_top_layout"
+        layout="@layout/top_layout"></include>
+
+    <android.support.v4.view.ViewPager
+        android:layout_below="@+id/img_detail_top_layout"
+        android:id="@+id/center_pic_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:background="@color/alertdialog_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/share_pic"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/layout_40dp"
+            android:layout_weight="1"
+            android:background="@color/white" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/layout_20dp"
+                    android:layout_height="@dimen/layout_20dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/pic_share" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/layout_3dp"
+                    android:text="@string/share_img"
+                    android:textColor="@color/actionsheet_gray"
+                    android:textSize="@dimen/textSize_13sp" />
+            </LinearLayout>
+            <View
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="@dimen/layout_0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/alertdialog_line" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/delete_pic"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/layout_40dp"
+            android:layout_weight="1"
+            android:background="@color/white" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/layout_20dp"
+                    android:layout_height="@dimen/layout_20dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/pic_delete" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/layout_3dp"
+                    android:text="删除"
+                    android:textColor="@color/actionsheet_gray"
+                    android:textSize="@dimen/textSize_13sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

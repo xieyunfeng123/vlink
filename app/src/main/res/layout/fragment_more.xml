@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/video_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/top_color">
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:text="更多"
+            android:textColor="@color/top_text_color"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/more_to_file_manage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <ImageView
+            android:src="@mipmap/more_file"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="28dp"
+            android:layout_height="28dp" />
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="文件管理"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@mipmap/rigth_k"
+            android:layout_margin="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="18dp"
+            android:layout_height="18dp" />
+    </LinearLayout>
+    <View
+        android:background="@color/alertdialog_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_0.5dp" />
+    <LinearLayout
+        android:id="@+id/to_dev_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <ImageView
+            android:src="@mipmap/more_menu"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="28dp"
+            android:layout_height="28dp" />
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="设备列表"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@mipmap/rigth_k"
+            android:layout_margin="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="18dp"
+            android:layout_height="18dp" />
+    </LinearLayout>
+
+    <View
+        android:background="@color/alertdialog_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_0.5dp" />
+    <LinearLayout
+        android:id="@+id/more_to_wifi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <ImageView
+            android:src="@mipmap/needle"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="28dp"
+            android:layout_height="28dp" />
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="@string/wifi"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@mipmap/rigth_k"
+            android:layout_margin="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="18dp"
+            android:layout_height="18dp" />
+    </LinearLayout>
+    <View
+        android:background="@color/alertdialog_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_0.5dp" />
+
+    <LinearLayout
+        android:id="@+id/to_change_psd"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <ImageView
+            android:src="@mipmap/more_psd"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="28dp"
+            android:layout_height="28dp" />
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="密码修改"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@mipmap/rigth_k"
+            android:layout_margin="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="18dp"
+            android:layout_height="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <ImageView
+            android:src="@mipmap/more_setting"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="28dp"
+            android:layout_height="28dp" />
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="系统设置"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@mipmap/rigth_k"
+            android:layout_margin="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="18dp"
+            android:layout_height="18dp" />
+    </LinearLayout>
+    <View
+        android:background="@color/alertdialog_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_0.5dp" />
+
+    <LinearLayout
+        android:id="@+id/more_to_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/more_about" />
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="关于"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@mipmap/rigth_k"
+            android:layout_margin="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="18dp"
+            android:layout_height="18dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sys_exit"
+        android:text="注销"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:background="@color/main_color"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+</LinearLayout>

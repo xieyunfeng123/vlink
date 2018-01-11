@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+   >
+
+    <LinearLayout
+        android:id="@+id/video_back_button_bg"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/video_back_client"
+
+            android:layout_margin="10dp"
+            style="@style/style_video_radio"
+            android:text="@string/client_back"
+            android:button="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/video_back_cloud"
+            android:layout_margin="10dp"
+            style="@style/style_video_radio"
+            android:text="@string/cloud_back"
+            android:button="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_1dp"
+        android:background="@color/alertdialog_line" />
+    </LinearLayout>
+    <ExpandableListView
+        android:layout_below="@+id/video_back_button_bg"
+        android:id="@+id/dev_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:layout_marginBottom="50dp"
+        android:listSelector="@color/white" />
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/video_start_play"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:text="@string/start"
+        android:background="@color/main_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_45dp" />
+
+</RelativeLayout>

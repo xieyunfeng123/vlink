@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/video_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/top_color">
+
+        <ImageView
+            android:visibility="gone"
+            android:scaleType="center"
+            android:paddingLeft="@dimen/layout_20dp"
+            android:id="@+id/top_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/registernaritem" />
+
+
+
+        <TextView
+            android:id="@+id/top_name"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:text="更多"
+            android:textColor="@color/top_text_color"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:visibility="gone"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/top_right_name"
+            android:layout_gravity="center_vertical"
+            android:text="更多"
+            android:textColor="@color/main_color"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/top_search"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="center"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/spotsupervision_playback_searchbtn" />
+    </RelativeLayout>
+</LinearLayout>

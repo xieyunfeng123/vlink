@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <com.bm.library.PhotoView
+        android:id="@+id/fragment_img_detail_show_img"
+        android:scaleType="fitCenter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.vomont.vlink.view.CommonVideoView
+        android:visibility="gone"
+        android:id="@+id/fragment_video_detail_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.vomont.vlink.view.CommonVideoView>
+
+    <TextView
+        android:id="@+id/textname"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/back_color"
+    android:layout_height="match_parent">
+    <include layout="@layout/top_layout" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/ploice_souce"
+            android:textColor="@color/biantai_gray"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/police_detail_name"
+            android:layout_margin="15dp"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="Ehome"
+            android:textColor="@color/text_color"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <View
+        android:background="@color/alertdialog_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_0.5dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/ploice_type"
+            android:textColor="@color/biantai_gray"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/police_detail_type"
+            android:layout_margin="15dp"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="移动侦测"
+            android:textColor="@color/text_color"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <View
+        android:background="@color/alertdialog_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_0.5dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/ploice_time"
+            android:textColor="@color/biantai_gray"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/police_detail_time"
+            android:layout_margin="15dp"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="2017/11/10 09:33:33"
+            android:textColor="@color/text_color"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <View
+        android:background="@color/alertdialog_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_0.5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/alertdialog_line"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/layout_15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:src="@mipmap/mix" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/layout_5dp"
+            android:gravity="center_vertical"
+            android:text="联动抓图"
+            android:textColor="@color/actionsheet_gray"
+            android:textSize="@dimen/textSize_12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="(共0张)"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/textSize_11sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@mipmap/alarm_detilalter"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_margin="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暂无数据"
+                android:textColor="@color/text_color"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/alertdialog_line"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/layout_15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:src="@mipmap/mix" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/layout_5dp"
+            android:gravity="center_vertical"
+            android:text="联动视频"
+            android:textColor="@color/actionsheet_gray"
+            android:textSize="@dimen/textSize_12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="(共0段)"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/textSize_11sp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@mipmap/alarm_detilalter"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_margin="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暂无数据"
+                android:textColor="@color/text_color"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="@color/alertdialog_line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></LinearLayout>
+
+</LinearLayout>

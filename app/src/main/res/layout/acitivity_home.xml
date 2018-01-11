@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/back_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<SurfaceView
+    android:layout_width="0dp"
+    android:layout_height="0dp" />
+
+    <FrameLayout
+        android:id="@+id/activity_home_frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_above="@+id/home_end"
+        android:background="@color/back_color" />
+
+    <LinearLayout
+        android:id="@+id/home_end"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/top_app_color" >
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_video"
+                style="@style/style_home_radio"
+                android:checked="true"
+                android:drawableTop="@drawable/radio_video"
+                android:text="@string/radio_video" />
+
+            <RadioButton
+                android:id="@+id/radio_map"
+                style="@style/style_home_radio"
+                android:drawableTop="@drawable/radio_map"
+                android:text="@string/radio_map" />
+
+            <RadioButton
+                android:id="@+id/radio_callplolice"
+                style="@style/style_home_radio"
+                android:drawableTop="@drawable/radio_callpolice"
+                android:text="@string/radio_callplolice" />
+
+            <RadioButton
+                android:id="@+id/radio_more"
+                style="@style/style_home_radio"
+                android:drawableTop="@drawable/radio_more"
+                android:text="@string/radio_more" />
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/back_color"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/ploice_type_bg"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@color/back_color"
+        android:layout_height="match_parent">
+    <include  layout="@layout/top_layout"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ploice_type"
+            android:textColor="@color/biantai_gray"
+            android:textSize="15sp" />
+
+        <RadioGroup
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                style="@style/style_police_radio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="移动侦测" />
+
+            <RadioButton
+                android:layout_marginLeft="5dp"
+                android:text="外部IO"
+                style="@style/style_police_radio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null" />
+
+            <RadioButton
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="其他"
+                style="@style/style_police_radio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/alertdialog_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_0.5dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ploice_time"
+            android:textColor="@color/biantai_gray"
+            android:textSize="13sp" />
+        <LinearLayout
+            android:id="@+id/police_starttime_bg"
+            android:layout_margin="10dp"
+            android:background="@drawable/linearlayout_bg"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/police_starttime"
+                android:layout_margin="10dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="请选择"
+                android:textColor="@color/text_color"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/alarm_searchtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+        <View
+            android:background="@color/alertdialog_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_0.5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="@string/ploice_type"
+            android:textColor="@color/biantai_gray"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:id="@+id/police_endtime_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/linearlayout_bg"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/police_endtime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:text="请选择"
+                android:textColor="@color/text_color"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/alarm_searchtime" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:background="@color/alertdialog_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_0.5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/is_move_listview"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="@string/ploice_type"
+                android:textColor="@color/biantai_gray"
+                android:textSize="15sp" />
+            <ListView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/police_type_bg"
+                android:listSelector="@color/white"
+                android:divider="@null"
+                android:id="@+id/has_choose_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ListView>
+            </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/police_search_type"
+        android:text="@string/search"
+        android:textColor="@color/white"
+        android:layout_margin="30dp"
+        android:background="@drawable/login_button_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_45dp" />
+
+    </LinearLayout>
+</LinearLayout>

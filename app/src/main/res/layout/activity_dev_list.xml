@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/top_layout"></include>
+    <LinearLayout
+        android:background="@color/alertdialog_line"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.vomont.vlink.view.ClearEditText
+        android:textColor="@color/text_color"
+        android:id="@+id/filter_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_20dp"
+        android:layout_marginRight="@dimen/layout_20dp"
+        android:layout_marginTop="@dimen/layout_10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittext_bg"
+        android:drawableLeft="@mipmap/search_bar_icon_normal"
+        android:hint="@string/input_text"
+        android:paddingBottom="@dimen/layout_5dp"
+        android:paddingLeft="@dimen/layout_10dp"
+        android:paddingTop="@dimen/layout_5dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:textColorHint="@color/text_color"
+        android:textSize="@dimen/textSize_16sp" />
+
+    </LinearLayout>
+    <ExpandableListView
+        android:id="@+id/more_dev_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:listSelector="@color/white" />
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/back_color"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/top_layout"></include>
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/vlogo1024_circle"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textSize="24sp"
+        android:textColor="@color/biantai_gray"
+        android:text="vlinker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textSize="13sp"
+        android:textColor="@color/biantai_gray"
+        android:text="为一切智能设备提供视频连接服务"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp" />
+    <LinearLayout
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textSize="13sp"
+            android:textColor="@color/biantai_gray"
+            android:text="版本号：1.2.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textSize="13sp"
+            android:textColor="@color/biantai_gray"
+            android:text="官方网站：www.vomont.com"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:textSize="13sp"
+            android:textColor="@color/biantai_gray"
+            android:text="版权所有：南京物盟信息科技有限公司"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

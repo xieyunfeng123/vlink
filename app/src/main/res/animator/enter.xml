@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" android:ordering="sequentially">
+    <objectAnimator
+        android:duration="0"
+        android:propertyName="rotationY"
+        android:valueFrom="-90"
+        android:valueTo="-90" />
+
+    <objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+        android:interpolator="@android:anim/decelerate_interpolator"
+        android:duration="500"
+        android:propertyName="rotationY"
+        android:startOffset="500"
+        android:valueFrom="-90"
+        android:valueTo="0f"
+        android:valueType="floatType" />
+
+
+</set>
